@@ -1,0 +1,32 @@
+{
+  "name": "hotlog-server",
+  "version": "1.0.0",
+  "description": "Hotlog local webserver",
+  "author": "Nicolas Duck <snicolas.du@gmail.com>",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "randomcolor": "^0.6.2",
+    "unique-names-generator": "^4.7.1",
+    "uuid": "^9.0.0"
+  },
+  "eslintConfig": {
+    "root": true,
+    "env": {
+      "node": true
+    },
+    "extends": [
+      "eslint:recommended"
+    ],
+    "parserOptions": {
+      "parser": "babel-eslint"
+    },
+    "rules": {}
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.3"
+  }
+}
