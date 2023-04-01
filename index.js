@@ -17,6 +17,7 @@ const HTTPServer = $http.createServer(function (request, response) {
         return response.end();
     }
     HTTPRouter(request, response, stores)
+
 });
 HTTPServer.listen(process.env.NODE_HTTP_PORT, process.env.NODE_HTTP_HOST, function () {
     console.log(`HTTPServer : Listening on http://${process.env.NODE_HTTP_HOST}:${process.env.NODE_HTTP_PORT}`);

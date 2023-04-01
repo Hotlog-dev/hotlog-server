@@ -2,6 +2,10 @@ const routes = require('./router.routes.js')
 module.exports = function (request, response, stores) {
     // let url = request.url.startsWith('/') ? request.url.substring(1) : request.url;
     let url = request.url;
+    //The UI serves multiple files dans cannot be checked with === on url
+    if(url.startsWith('/ui')){
+        url = '/ui'
+    }
     let body = '';
     request.on('data', chunk => {
         body += chunk;

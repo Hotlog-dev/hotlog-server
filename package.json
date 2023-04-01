@@ -9,6 +9,7 @@
   },
   "dependencies": {
     "dotenv": "^8.2.0",
+    "fs": "^0.0.1-security",
     "randomcolor": "^0.6.2",
     "unique-names-generator": "^4.7.1",
     "uuid": "^9.0.0"
